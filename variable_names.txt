@@ -1,0 +1,12 @@
+subject - subjectField // поле с названием урока
+teacher - teacherNameField // поле с именем учителя, который назвал цитату
+day - dayQuotField // поле с днём, когда назвалась цитата
+month - monthQuotField // поле с месяцем, когда назвалась цитата
+year - yearQuotField // поле с годом, когда назвалась цитата
+id - idQuotField // поле с id цитаты
+quot - quotField // поле, где ввели цитату
+index - idQuot // id цитаты
+author - authorQuot // автор цитаты
+group - groupNumber // номер группы
+q - quot // цитата
+t - teacherName // имя учителя
