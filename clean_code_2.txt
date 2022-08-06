@@ -1,0 +1,21 @@
+6.1
+list - allOpenPrograms // все открытые программы
+max - maxMoneyPosition // максимальная денежная ставка
+s - lastNameOfTheUser // фамилия пользователя 
+number - phoneNumberOfTheUser // номер телефона пользователя
+map - wordsOfFile // слова из файла
+6.2
+personFactory // фабрика для создания людей
+priceParser // парсер строк
+actionListener // слушатель действий
+httpClient // клинт для работы с http
+6.3
+number - personPhoneNumber // номер телефона человека
+password - userPasswordField // поле с пароем пользователя
+login - userLoginField // поле с логином пользователя
+6.4
+s - stringOfFile // строка из файла
+c - recursionCompiler // рекурсивный компилятор
+l - userLogin // логин пользователя
+g - userGroup // группа пользователя
+a - userAccessLevel // уровень доступа пользователя
