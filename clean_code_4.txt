@@ -1,0 +1,14 @@
+_speed - speedCpt // скорость перемещения (игровые ячейки в тик)
+_dx - stepX // размер шага по оси X игрового поля
+dy - stepY // размер шага по оси Y игрового поля
+_rows - rowsWithBricks // количество линий кирпичей
+_cols - bricksInRow //количество кирпичей в каждой линии
+LEFT - LEFT_ARROW_KEY // номер клавиши (стрелка влево)
+RIGHT - RIGHT_ARROW_KEY // номер клавиши (стрелка вправо)
+alpha - angleDegreesRebound // угол отскока в градусах
+
+//метод для сравнения двух комнат
+firstX1 - firstRoomBottomLeftX // X координата левого нжнего угла первой комнаты
+firstY1 - firstRoomBottomLeftY // Y координата левого нжнего угла первой комнаты
+secondX2 - secondRoomTopRigthX // X координата правого верхнего угла второй комнаты
+secondY2 - secondRoomTopRigthY // Y координата правого верхнего угла второй комнаты
