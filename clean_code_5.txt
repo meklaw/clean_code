@@ -1,0 +1,15 @@
+3.1
+User - UserAccount // класс хранящий данные пользователя
+DBLayer - DataBaseLayer // класс, реализующий интефейс модели (MVC)
+Registration - AccountRegistration // класс для регистрации нового пользователя
+File - FileParser // текстовый парсер
+Alor - AlorHttpConnector // класс с http запросами к Alor API
+
+3.2
+listPortfolios - getListPortfolios // получить список портфелей
+orders - getOrder // получить список сделок
+order - getOrder // получить сделку
+openPositions - getOpenPositions // получить список открытых позиций
+stox - getStox // получить цену ценной бумаги
+quotes - getQuotes // получить стаканы ценных бумаг
+limitActions - makeLimitActions // создать лимитную заявку
