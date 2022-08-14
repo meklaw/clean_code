@@ -1,0 +1,13 @@
+Имена функций/методов
+caseSummary - getPortfolioInfo // Получение информации о портфеле
+updateJWT - updateJWT и getJWT // разбил метод на пару, так как метод выполнял несколько операций по получению и обновлению JWT токена
+getOrders - getAllOrders // Получение информации о всех заявках
+menu - changeSceneToMenu // меняет текущую страницу на меню
+allQuotes - showAllQuotes // показать все цитаты
+myQuotes - showUserQuotes // показать все цитаты пользователя
+signUp - changeSceneToRegistration // меняет текущую страницу на регистрацию
+authorize - changeSceneToAuthorize // меняет текущую страницу на вход в аккаунт
+registration - registerAccount // создаёт новый аккаунт
+change - changeUserData // изменяет данные пользователя
+showMyData - showUserData // показывает данные полльзователя
+write - makeQuote // добавляет цитату 
