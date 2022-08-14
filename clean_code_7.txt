@@ -1,0 +1,10 @@
+3.1
+R3Vector vector = R3Vector.ReadAndMakeVector()
+// читает с консоли значения и на их основе создает вектор
+R3Vector vector = R3Vector.MakeVectorFromString("3 10 0")
+// создает вектор на основе строки
+R3Vector vector = R3Vector.MakeVectorFromNums(3, 10, 0)
+// создает вектор на основе чисел
+
+3.2
+Абстрактный класс ModelLayer и реализующий класс DataBaseModelLayer
