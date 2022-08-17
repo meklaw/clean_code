@@ -1,0 +1,23 @@
+// упростил сложное выражение в if, вынеся 3 выражения в переменные
+boolean isAdmin = ModelLayer.USER_ACCOUNT.getAccessLevel() == 3;
+boolean isWarden = ModelLayer.USER_ACCOUNT.getAccessLevel() == 2 && groupNumber == ModelLayer.USER_ACCOUNT.getGroup();
+boolean isAuthor = authorQuot == ModelLayer.USER_ACCOUNT.getId();
+if (!(isAdmin || isWarden || isAuthor))
+    return;
+    
+//вынес магическую строку с путем к настройкам в константу
+const val SETTINGS_PROPERTIES = "src/main/resources/settings.properties"
+settings.load(FileInputStream(settingsLink))
+// вывел названия торговых портфелей в перечисление (enum), подгружаются тоже из файла с настройками
+stock = "PXXXXXX" -> Portfolio.Stock.value
+futures = "PXXXXXX" -> Portfolio.Futures.value
+currency = "PXXXXXX" -> Portfolio.Currency.value
+//убрал магические строки "MOEX" и "SPBX" из методов и вынес их в перечисление
+enum class Exchange {
+    MOEX,
+    SPBX
+}
+//Добавил поддержку Unicode
+val reader = Scanner(connection.inputStream, "UTF-8")
+
+// Получилось 10 правок. Больше не нашел проблемных мест, по теории из урока
