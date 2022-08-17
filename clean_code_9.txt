@@ -17,7 +17,9 @@ enum class Exchange {
     MOEX,
     SPBX
 }
+//вынес магические символы в константы из цикла
+final char ALPHABET_START = 'a'
+final char ALPHABET_END = 'z'
+for (char i = 'a'; i <= 'z'; i++) {}
 //Добавил поддержку Unicode
 val reader = Scanner(connection.inputStream, "UTF-8")
-
-// Получилось 10 правок. Больше не нашел проблемных мест, по теории из урока
