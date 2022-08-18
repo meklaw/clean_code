@@ -1,0 +1,30 @@
+if (connection.responseCode == HttpsURLConnection.HTTP_OK) {
+  al scanner = Scanner(connection.inputStream)
+  al json = scanner.nextLine()
+}
+//перенёс объявление переменных внутрь условия, они больше нигде не используются
+
+try {
+  val query = ""
+  val os = connection.outputStream
+  os.write(query.toByteArray())
+}
+//перенёс переменную query в блок try ближе к месту использования, она больше нигде не используются
+
+private const val ALOR_SERVER_LINK = "https://api.alor.ru"
+private const val SETTINGS_PROPERTIES = "src/main/resources/settings.properties";
+//глобальные переменные сделал переменными класса
+
+final Map<String, Integer> surnames = new TreeMap<>();
+final String[][] teams = new String[numTeams][3];
+final StringBuilder domains = new StringBuilder("");
+final Map<String, Stack<Integer>> variables = new HashMap<>();
+//из переменной класса сделал переменной метода
+
+//разбил метод на 2 штуки и разнес переменные
+public void readDataAndCountDomains(Reader reader){}
+//на 
+public void readData(Reader reader) {}
+private void countDomains(Scanner in, int consumer, StringBuilder domains) {}
+
+//Нашёл только 9 мест, где получилось сгруппировать команды и уменьшить видимость переменных
