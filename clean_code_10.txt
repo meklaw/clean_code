@@ -1,0 +1,18 @@
+//Добавил тип аргумента и тип возвращаемого значения
+def fib(n: int) -> int:
+def fib_digit(n: int) -> int:
+def fib_mod(n: int, m: int) -> int:
+def euclidGCD(a: int, b: int) -> int:
+def insert(self, after_node: Node, new_node: Node) -> None:
+def sum_list(a_list: LinkedList, b_list: LinkedList) -> LinkedList | None:
+def add_in_tail(self, item: Node) -> None:
+def add_in_head(self, new_node: Node) -> None:
+def __delete_node(self, node: Node) -> None:
+def compare(self, v1: str, v2: str) -> int:
+
+//Добавил тип возвращаемого значения
+def equals(self, another) -> bool:
+def len(self) -> int
+def find(self, val) -> Node | None:
+def find_all(self, val) -> []:
+def delete(self, val, all=False) -> None:
