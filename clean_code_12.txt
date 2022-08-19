@@ -1,0 +1,43 @@
+//Связывание во время выполнения программы.
+enum class Portfolio(var value: String) {
+    Stock(""),
+    Futures(""),
+    Currency("");
+
+    companion object Factory {
+        fun init() {
+            val settings = Properties()
+            settings.load(FileInputStream("src/main/resources/settings.properties"))
+            Stock.value = settings.getProperty("stockProfile")
+            Futures.value = settings.getProperty("futuresProfile")
+            Currency.value = settings.getProperty("currencyProfile")
+        }
+    }
+}
+
+/*
+При вызове Portfolio.init() из любого другого кода будет произведена инициализация переменных перечисления из файла.
+Сделано для того, чтобы данные о портфеле можно было менять напрямую в файле, а не коде программы.
+*/
+
+//Связывание переменной во время компиляции
+private const val ALOR_SERVER_LINK = "https://api.alor.ru"
+fun getAllOrders(exchange: Exchange, portfolio: Portfolio) {
+        val request = "${ALOR_SERVER_LINK}/md/v2/clients/${exchange.name}/${portfolio.value}/orders"
+}
+/*
+Метод отправляет HTTP запрос на сервер. 
+Ссылка на сервер заранее известна, 
+поэтому для минимизации опечаток ссылка на сервер вынесена в отдельную переменную ALOR_SERVER_LINK.
+*/
+
+//Самое раннее связвыание
+fun doGet(request: String): InputStream {
+        ...
+        connection.requestMethod = "GET"
+        ...
+}
+/*
+Поскольку в классе находится только один метод который использует строку "GET" единожды и совершает Get запрос.
+Нет необходимости выносить в отдельную переенную и делать более позднее связывание.
+*/
