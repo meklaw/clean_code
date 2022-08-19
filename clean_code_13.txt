@@ -1,0 +1,45 @@
+//Сменил массив на смешанную структуру из стэка и очереди и убрал обращение к индексам
+ public static int findMaxVictories(Stack<PriorityQueue<String>> teams) {
+        Map<String, Integer> teamVictor = new HashMap<>();
+        for (Stack<Queue<String>> team: teams) {
+           Arrays.sort(team);
+           teamVictor.merge(team[0] + team[1] + team[2], 1, Integer::sum);
+       }
+        return teamVictor.values().stream().max(Integer::compare).get();
+}
+
+//стало
+ public static int findMaxVictories(Stack<PriorityQueue<String>> teams) {
+        ...
+        teams.forEach(team -> teamVictor.merge(team.poll() + team.poll() + team.poll(), 1, Integer::sum));
+        ...
+}
+
+
+//заменил массив на очередь
+final String[] domains = new String[allDomainsNum];
+
+final Queue<String> domains = new PriorityQueue<>();
+
+//заменил 2 массива (фамилии в порядке записи и в алфавитном порядке)
+final List<String> surnames = new ArrayList<>();
+final List<String> sortedSurnames = new ArrayList<>();
+//на мапу, которая сортртирует фамилии по алфавиту и хранит порядковый номер при записи
+final Map<String, Integer> surnames = new TreeMap<>();
+
+//заменил обыный цикл на foreach 
+for (int i = 0; i < bricks.size(); i++) {
+            if (!((Brick) bricks.get(i)).isDead())
+                result++;
+}
+        
+for (Brick brick : bricks) {
+            if (!((Brick) brick).isDead())
+                result++;
+}
+
+//заменил обращение по индексу на поток
+for (int i = 0; i < vec.size(); i++)
+			((Sprite) vec.elementAt(i)).draw(g);
+//стало
+vec.forEach(i -> ((Sprite) i).draw(g));
