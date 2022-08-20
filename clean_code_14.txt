@@ -1,0 +1,36 @@
+3.1
+//найти максимальную сумму побед среди команд
+System.out.println(findMaxVictories(teams));
+
+// понизить уровень вложенности переменых
+dumpLevel(variables);
+
+//получить значение числа или переменной
+int value = getValue(command[0], command[1]);
+
+//присвоить значение value переменной command[0] на соответствующий уровень вложенности 
+putValue(command[0], value);
+
+//найти фамилиина основе алгоритма из задачи
+exersice.findSurnames(new InputStreamReader(System.in));
+
+// прочитать файл и записать фамилии
+readSurnames(in, people);
+
+//прочитать файл и подсчитать кол-во шагов Олега требующихся для обхода магазина
+exersice.readDataAndCountSteps(new InputStreamReader(System.in));
+
+3.2
+String min = "";
+//должен ббрать сначала ближние и наименьшие к началу
+for (String key:
+    graph.get(position).keySet()) {
+    if (cost.get(key) < numMin && !visited.get(key)) {
+        min = key;
+        numMin = cost.get(key);
+    }
+}
+//заменил на отдельный метод на 
+String min = getMinimumValueOfPosition(position);
+
+//Больше не нашел ошибки удовлетворяющие условиям задачи
