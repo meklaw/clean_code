@@ -1,0 +1,54 @@
+//1. Информативный комментарий 
+// поиск по началу и концу среди доменов
+Pattern domainPattern = Pattern.compile("\\b" + start + "[STAR]*" + end + "\\b");
+
+//2. Комментарии TODO 
+/* TODO
+добавить обработку циклов
+добавить обработку тупиков
+*/
+public class DijkstrasAlgorithm {}
+
+//3. Усиление 
+//Без пустой строки POST запрос не пройдёт и будет ошибка со стороны клиента
+String query = "";
+os.write(query.getBytes(StandardCharsets.UTF_8));
+os.flush();
+
+//4. Информативный комментарий (Маршрут REST запроса)
+//  /md/v2/clients/{exchange}/{portfolio}/orders
+fun getAllOrders(exchange: Exchange, portfolio: Portfolio) {}
+
+//5. Информативный комментарий (Маршрут REST запроса)
+//  /md/v2/clients/{exchange}/{portfolio}/orders/id
+fun getAllOrders(exchange: Exchange, portfolio: Portfolio, id: Int) {}
+
+//6. Информативный комментарий (Маршрут REST запроса)
+//  /md/v2/clients/{exchange}/{portfolio}/summary
+fun getPortfolioInfo(exchange: Exchange, portfolio: Portfolio) {}
+
+//7. Информативный комментарий (Маршрут REST запроса)
+//  /md/v2/Clients/{exchange}/{portfolio}/positions
+fun getOpenPositions(exchange: Exchange, portfolio: Portfolio) {}
+
+//8. Прояснение
+// возвращает JSON объект, который содержит:
+//    avgPrice - средняя цена
+//    qtyUnits - количество
+fun getOpenPositions(exchange: Exchange, portfolio: Portfolio) {}
+
+//9. Информативный комментарий (Маршрут REST запроса)
+//  /md/v2/Securities/{exchange}
+fun getStox(exchange: Exchange) {}
+
+//10. Информативный комментарий (Маршрут REST запроса)
+//  /md/v2/Securities/{exchange}/{symbol}
+fun getStox(exchange: Exchange, symbol: String) {}
+
+//11. Информативный комментарий (Маршрут REST запроса)
+//  /md/v2/Securities/{symbols}/quotes
+fun getQuotes(symbol: String) {}
+
+//12. Информативный комментарий (Маршрут REST запроса)
+//   /commandapi/warptrans/TRADE/v2/client/orders/actions/limit
+fun makeLimitActions(quantity: Int, price: Double, symbol: String, exchange: Exchange, portfolio: Portfolio) {}
