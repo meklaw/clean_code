@@ -1,0 +1,74 @@
+//1. Закомментированный код (удалил)
+//fun init() {
+//    val settings = Properties()
+//    settings.load(FileInputStream("src/main/resources/settings.properties"))
+//    Profiles.stock.values = settings.getProperty("stockProfile")
+//    Profiles.futures.values = settings.getProperty("futuresProfile")
+//    Profiles.currency.values = settings.getProperty("currencyProfile")
+//}
+
+//2. Закомментированный код (удалил)
+//    Alor.updateJWT()
+//    Alor.stox("MOEX")
+//    Alor.listPortfolios("P073455")
+//    Alor.caseSummary("MOEX","D73455")
+//    Alor.orders("MOEX","G73455")
+//    Alor.quotes("MOEX:BYNRUB_TOM")
+//    Alor.limitActions()
+
+//3. Закомментированный код (удалил)
+//val jsonObject = JSONParser().parse(json) as JSONObject
+//JWT = jsonObject.get("AccessToken") as String
+
+//4. Достаточно названия метода (п. 12) (удалил комментарий)
+//Обновляет JWT токен 
+private fun updateJWT() {}
+
+//5. Достаточно названия метода (п. 12) (удалил комментарий)
+/* Проверка коллизии */
+public Sprite testCollision(Sprite test) {}
+
+//6. Достаточно названия метода (п. 12) (удалил комментарий и переименовал метод)
+/* Перерисовка всех спрайтов. */
+public void drawAllSprites(Graphics g) {}
+
+//7. Достаточно названия метода (п. 12) (удалил комментарий и переименовал метод)
+/* Обновить состояние всех спрайтов */ 
+public void updateSpritesState() {}
+
+//8. Достаточно названия метода(п. 12) (удалил комментарий)
+/* Игрок проиграл. */
+public void loose() {}
+
+//9. Нелокальная информация (удалил комментарий)
+/* Если разбили все кирпичи, тогда игра заканчивается
+* победой игрока.
+*/
+
+//10. Обязательные комментарии (удалил комментарий и переименовал переменную)
+/*
+@_pf - игровое поле
+*/
+private PlayField playField;
+
+//11. Закомментированный устаревший код (удалил)
+//    private Vector bricks;
+private List<Brick> bricksList;
+
+//12. Обязательные комментарии (удалил)
+/*
+@_bricksList - множество кирпичей
+*/
+private List<Brick> bricksList;
+
+//13. Нелокальная информация (удалил комментарий)
+/* Контейнер кирпичей, которые еще не введены в игру. */
+/* Игрок выиграл, если все кирпичи разбиты. */
+
+//14. Достаточно названия метода(п. 12) (удалил комментарий)
+/* Игрок выиграл. */
+public void win() {}
+
+//15. Достаточно названия метода(п. 12) (удалил комментарий)
+/* Обработка отжатия клавиши */
+public void keyReleased(KeyEvent e) {}
